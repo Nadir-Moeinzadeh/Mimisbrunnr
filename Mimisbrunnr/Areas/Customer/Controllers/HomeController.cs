@@ -4,8 +4,9 @@ using System.Diagnostics;
 using Mimis.Models.ViewModels;
 using Mimis.Models;
 
-namespace Mimisbrunnr.Controllers
+namespace Mimisbrunnr.Areas.Customer.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

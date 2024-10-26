@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Mimis.Models;
-using Mimis.Models.ViewModels;
 using Mimis.Utility;
 using Mimisbrunnr.DataAccess.Repository.IRepository;
 
@@ -104,4 +103,3 @@ namespace Mimisbrunnr.Areas.Admin.Controllers
         }
     }
 }
-
