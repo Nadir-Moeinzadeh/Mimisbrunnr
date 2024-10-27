@@ -16,8 +16,10 @@
   <ItemGroup>
     <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\CompanyController.cs" />
+    <Compile Include="Areas\Admin\Controllers\OrderController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Controllers\UserController.cs" />
+    <Compile Include="Areas\Customer\Controllers\CartController.cs" />
     <Compile Include="Areas\Customer\Controllers\HomeController.cs" />
     <Compile Include="Areas\Identity\Pages\Account\AccessDenied.cshtml.cs" />
     <Compile Include="Areas\Identity\Pages\Account\ConfirmEmail.cshtml.cs" />
@@ -60,6 +62,9 @@
     <Content Include="Areas\Admin\Views\Category\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Company\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Company\Upsert.cshtml" />
+    <Content Include="Areas\Admin\Views\Order\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Order\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Order\PaymentConfirmation.cshtml" />
     <Content Include="Areas\Admin\Views\Product\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Product\Upsert.cshtml" />
     <Content Include="Areas\Admin\Views\User\Index.cshtml" />
@@ -72,6 +77,10 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+    <Content Include="Areas\Customer\Views\Cart\Index.cshtml" />
+    <Content Include="Areas\Customer\Views\Cart\OrderConfirmation.cshtml" />
+    <Content Include="Areas\Customer\Views\Cart\Summary.cshtml" />
+    <Content Include="Areas\Customer\Views\Home\Details.cshtml" />
     <Content Include="Areas\Customer\Views\Home\Index.cshtml" />
     <Content Include="Areas\Customer\Views\Home\Privacy.cshtml" />
     <Content Include="Areas\Customer\Views\_ViewImports.cshtml">
@@ -82,6 +91,46 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
+    <Content Include="Areas\Identity\Pages\Account\AccessDenied.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\ConfirmEmail.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\ConfirmEmailChange.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\ExternalLogin.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\ForgotPassword.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Lockout.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Login.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\LoginWith2fa.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\LoginWithRecoveryCode.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Logout.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\ChangePassword.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\DeletePersonalData.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\Disable2fa.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\DownloadPersonalData.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\Email.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\EnableAuthenticator.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\ExternalLogins.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\Index.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\PersonalData.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\ResetAuthenticator.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\SetPassword.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\ShowRecoveryCodes.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\_Layout.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\_StatusMessage.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Register.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\RegisterConfirmation.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\ResendEmailConfirmation.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\ResetPassword.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\_StatusMessage.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\_ViewImports.cshtml" />
+    <Content Include="Areas\Identity\Pages\Error.cshtml" />
+    <Content Include="Areas\Identity\Pages\_ValidationScriptsPartial.cshtml" />
+    <Content Include="Areas\Identity\Pages\_ViewImports.cshtml" />
+    <Content Include="Areas\Identity\Pages\_ViewStart.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -99,6 +148,7 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.6" />
     <PackageReference Include="SendGrid" Version="9.29.3" />
+    <PackageReference Include="Stripe.net" Version="46.2.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -107,6 +157,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Areas\Customer\Views\Home\Details.cshtml" />
     <None Include="Areas\Identity\Pages\Account\AccessDenied.cshtml" />
     <None Include="Areas\Identity\Pages\Account\ConfirmEmail.cshtml" />
     <None Include="Areas\Identity\Pages\Account\ConfirmEmailChange.cshtml" />
