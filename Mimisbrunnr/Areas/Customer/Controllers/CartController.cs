@@ -7,9 +7,12 @@ using Stripe.Checkout;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Mimisbrunnr.Areas.Customer.Controllers
 {
+    [Area("Customer")]
+    [Authorize]
     public class CartController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -28,6 +31,8 @@ namespace Mimisbrunnr.Areas.Customer.Controllers
 
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+
 
             ShoppingCartVM = new()
             {

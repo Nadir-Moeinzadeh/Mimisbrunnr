@@ -9,8 +9,8 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Mimisbrunnr.Areas.Admin.Controllers
 {
-    [Area("Admin")]
-    [Authorize(Roles = SD.Role_Admin)]
+     [Area("Admin")]
+     [Authorize(Roles = SD.Role_Admin)]
     public class UserController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
@@ -140,6 +140,21 @@ namespace Mimisbrunnr.Areas.Admin.Controllers
             _unitOfWork.Save();
             return Json(new { success = true, message = "Operation Successful" });
         }
+        [HttpDelete]
+        public IActionResult Delete([FromBody] string id)
+        {
+            var UserToBeDeleted = _unitOfWork.ApplicationUser.Get(u => u.Id == id);
+            if (UserToBeDeleted == null)
+            {
+                return Json(new { success = false, message = "Error while deleting" });
+            }
+
+            _unitOfWork.ApplicationUser.Remove(UserToBeDeleted);
+            _unitOfWork.Save();
+
+            return Json(new { success = true, message = "Delete Successful" });
+        }
+
 
         #endregion
     }

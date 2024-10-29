@@ -305,22 +305,22 @@ namespace Mimisbrunnr.Migrations
                         new
                         {
                             Id = 1,
-                            City = "Tech City",
-                            Name = "Tech Solution",
+                            City = "Baku City",
+                            Name = "CodersAz",
                             PhoneNumber = "6669990000",
                             PostalCode = "12121",
-                            State = "IL",
-                            StreetAddress = "123 Tech St"
+                            State = "Absheron",
+                            StreetAddress = "123 St"
                         },
                         new
                         {
                             Id = 2,
-                            City = "Vid City",
-                            Name = "Vivid Books",
+                            City = "Istanbul City",
+                            Name = "Nadir Books",
                             PhoneNumber = "7779990000",
                             PostalCode = "66666",
-                            State = "IL",
-                            StreetAddress = "999 Vid St"
+                            State = "Istanbul",
+                            StreetAddress = "999 St"
                         },
                         new
                         {
@@ -330,7 +330,7 @@ namespace Mimisbrunnr.Migrations
                             PhoneNumber = "1113335555",
                             PostalCode = "99999",
                             State = "NY",
-                            StreetAddress = "999 Main St"
+                            StreetAddress = "99 St"
                         });
                 });
 

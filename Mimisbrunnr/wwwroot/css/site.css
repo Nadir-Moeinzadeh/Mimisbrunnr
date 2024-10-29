@@ -1,6 +1,6 @@
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
-
+nav-link
 .divider-text:before,
 .divider-text:after {
     color: white;
@@ -23,8 +23,8 @@ a.navbar-brand {
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
+    background-color: #f5faff;
+    border-color: #e3e6e8;
 }
 
 html {
@@ -83,11 +83,11 @@ html {
 }
 
 .bg-primary {
-    background-color: #192E2F !important;
+    background-color: #000000 !important;
 }
 
 .bg-secondary {
-    background-color: #3A595C !important;
+    background-color: #000000 !important;
 }
 
 bg-success {
@@ -97,7 +97,7 @@ bg-success {
 
 
 .card {
-    border-color: #425F4B !important;
+    border-color: #000000 !important;
 }
 
 
@@ -107,16 +107,16 @@ bg-success {
 
 
 .btn-outline-primary {
-    color: #192E2F;
-    border-color: #192E2F;
+    color: #000000;
+    border-color: #000000;
 }
 
 
 
     .btn-outline-primary:hover {
         color: #fff;
-        background-color: #192E2F;
-        border-color: #192E2F;
+        background-color: #000000;
+        border-color: #000000;
     }
 
 
@@ -130,8 +130,8 @@ bg-success {
     .btn-check:checked + .btn-outline-primary,
     .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
         color: #fff;
-        background-color: #192E2F;
-        border-color: #192E2F;
+        background-color: #000000;
+        border-color: #000000;
     }
 
 
@@ -144,7 +144,7 @@ bg-success {
 
 
     .btn-outline-primary:disabled, .btn-outline-primary.disabled {
-        color: #192E2F;
+        color: #000000;
         background-color: transparent;
     }
 
@@ -244,24 +244,24 @@ bg-success {
 
 .btn-primary {
     color: #fff;
-    background-color: #192E2F;
-    border-color: #192E2F;
+    background-color: #000000;
+    border-color: #000000;
 }
 
 
 
     .btn-primary:hover {
         color: #fff;
-        background-color: #445f5e;
-        border-color: #445f5e;
+        background-color: #282828;
+        border-color: #282828;
     }
 
 
 
     .btn-check:focus + .btn-primary, .btn-primary:focus {
         color: #fff;
-        background-color: #445f5e;
-        border-color: #445f5e;
+        background-color: #000000;
+        border-color: #000000;
         box-shadow: 0 0 0 0.25rem rgba(60, 60, 60, 0.5);
     }
 
@@ -271,8 +271,8 @@ bg-success {
     .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active,
     .show > .btn-primary.dropdown-toggle {
         color: #fff;
-        background-color: #445f5e;
-        border-color: #445f5e;
+        background-color: #000000;
+        border-color: #000000;
     }
 
 

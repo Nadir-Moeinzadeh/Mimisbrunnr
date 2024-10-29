@@ -39,28 +39,28 @@ namespace Mimisbrunnr.DataAccess.Data
                 new Company
                 {
                     Id = 1,
-                    Name = "Tech Solution",
-                    StreetAddress = "123 Tech St",
-                    City = "Tech City",
+                    Name = "CodersAz",
+                    StreetAddress = "123 St",
+                    City = "Baku City",
                     PostalCode = "12121",
-                    State = "IL",
+                    State = "Absheron",
                     PhoneNumber = "6669990000"
                 },
                 new Company
                 {
                     Id = 2,
-                    Name = "Vivid Books",
-                    StreetAddress = "999 Vid St",
-                    City = "Vid City",
+                    Name = "Nadir Books",
+                    StreetAddress = "999 St",
+                    City = "Istanbul City",
                     PostalCode = "66666",
-                    State = "IL",
+                    State = "Istanbul",
                     PhoneNumber = "7779990000"
                 },
                 new Company
                 {
                     Id = 3,
                     Name = "Readers Club",
-                    StreetAddress = "999 Main St",
+                    StreetAddress = "99 St",
                     City = "Lala land",
                     PostalCode = "99999",
                     State = "NY",
