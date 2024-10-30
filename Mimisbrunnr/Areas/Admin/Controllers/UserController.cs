@@ -6,6 +6,7 @@ using Mimis.Models;
 using Mimis.Utility;
 using Mimisbrunnr.DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
 
 namespace Mimisbrunnr.Areas.Admin.Controllers
 {
@@ -26,6 +27,12 @@ namespace Mimisbrunnr.Areas.Admin.Controllers
         {
             return View();
         }
+
+
+
+  
+
+
 
         public IActionResult RoleManagment(string userId)
         {
@@ -62,7 +69,7 @@ namespace Mimisbrunnr.Areas.Admin.Controllers
 
             if (!(roleManagmentVM.ApplicationUser.Role == oldRole))
             {
-                //a role was updated
+              
                 if (roleManagmentVM.ApplicationUser.Role == SD.Role_Company)
                 {
                     applicationUser.CompanyId = roleManagmentVM.ApplicationUser.CompanyId;
@@ -140,21 +147,7 @@ namespace Mimisbrunnr.Areas.Admin.Controllers
             _unitOfWork.Save();
             return Json(new { success = true, message = "Operation Successful" });
         }
-        [HttpDelete]
-        public IActionResult Delete([FromBody] string id)
-        {
-            var UserToBeDeleted = _unitOfWork.ApplicationUser.Get(u => u.Id == id);
-            if (UserToBeDeleted == null)
-            {
-                return Json(new { success = false, message = "Error while deleting" });
-            }
-
-            _unitOfWork.ApplicationUser.Remove(UserToBeDeleted);
-            _unitOfWork.Save();
-
-            return Json(new { success = true, message = "Delete Successful" });
-        }
-
+      
 
         #endregion
     }

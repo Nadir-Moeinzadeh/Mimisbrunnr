@@ -52,15 +52,15 @@ namespace Mimisbrunnr.DataAccess.DbInitializer
                 //if roles are not created, then we will create admin user as well
                 _userManager.CreateAsync(new ApplicationUser
                 {
-                    UserName = "Nadir",
-                    Email = "nader.moinzadeh@gmail.com",
-                    Name = "Nadir Moeinzadeh",
-                    PhoneNumber = "0556144460",
-                    StreetAddress = "Nizami 107",
+                    UserName = "admin@gmail.com",
+                    Email = "admin@gmail.com",
+                    Name = "Admin",
+                    PhoneNumber = "0000000000",
+                    StreetAddress = "st 107",
                     State = "Absheron",
                     PostalCode = "23422",
-                    City = "Sumqayit"
-                }, "Admin123*").GetAwaiter().GetResult();
+                    City = "Baku"
+                }, "Admin123#").GetAwaiter().GetResult();
 
 
                 ApplicationUser user = _db.ApplicationUsers.FirstOrDefault(u => u.Email == "nader.moinzadeh@gmail.com");

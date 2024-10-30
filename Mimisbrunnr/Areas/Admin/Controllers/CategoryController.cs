@@ -67,7 +67,7 @@ namespace Mimisbrunnr.Areas.Admin.Controllers
             {
                 _unitOfWork.Category.Update(obj);
                 _unitOfWork.Save();
-                TempData["success"] = "Category updated successfully";
+                TempData["success"] = "Category updated successfully!";
                 return RedirectToAction("Index");
             }
             return View();
@@ -98,7 +98,7 @@ namespace Mimisbrunnr.Areas.Admin.Controllers
             }
             _unitOfWork.Category.Remove(obj);
             _unitOfWork.Save();
-            TempData["success"] = "Category deleted successfully";
+            TempData["success"] = "Category deleted successfully!";
             return RedirectToAction("Index");
         }
     }

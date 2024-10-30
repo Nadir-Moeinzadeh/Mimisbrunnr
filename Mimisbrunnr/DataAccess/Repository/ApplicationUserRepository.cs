@@ -15,5 +15,6 @@ namespace Mimisbrunnr.DataAccess.Repository
         {
             _db.ApplicationUsers.Update(applicationUser);
         }
+      
     }
 }

@@ -120,6 +120,7 @@
     <Content Include="Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml" />
     <Content Include="Areas\Identity\Pages\Account\Manage\_StatusMessage.cshtml" />
     <Content Include="Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml" />
+    <Content Include="Areas\Identity\Pages\Account\Manage\_ViewStart.cshtml" />
     <Content Include="Areas\Identity\Pages\Account\Register.cshtml" />
     <Content Include="Areas\Identity\Pages\Account\RegisterConfirmation.cshtml" />
     <Content Include="Areas\Identity\Pages\Account\ResendEmailConfirmation.cshtml" />
